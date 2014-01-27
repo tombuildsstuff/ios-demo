@@ -7,6 +7,7 @@
 //
 
 #import "TestViewController.h"
+#import "ColorOptions.h"
 
 @interface TestViewController ()
 
@@ -14,26 +15,29 @@
 
 @implementation TestViewController
 
-// values set to avoid '0' as default since that is the tag default value
-// enum used to avoid magic tag numbers (ie. for clarity)
-enum
+-(void)viewWillAppear:(BOOL)animated
 {
-    blue = 1,
-    red = 2,
-    yellow  = 3
-} typedef ColorOptions;
+    [super viewWillAppear:animated];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(dismiss)];
+}
 
 - (IBAction)radioButtonSelected:(id)sender
 {
-    ColorOptions selectedOption = (ColorOptions)((UIButton*)sender).tag;
+    ColorOptions selectedOption = (ColorOptions)(int)((UIButton*)sender).tag;
     
     for (UIButton* button in self.radioButtons)
     {
-        ColorOptions option = (ColorOptions)((UIButton*)sender).tag;
+        NSInteger index = (NSInteger)((UIButton*)sender).tag;
+        ColorOptions option = (ColorOptions)index;
         [button setSelected:option == selectedOption];
     }
     
-    self.selectedOption.text = [NSString stringWithFormat:@"%@ colour", selectedOption];
+    self.selectedOption.text = [NSString stringWithFormat:@"%i colour", selectedOption];
+}
+
+-(void)dismiss
+{
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

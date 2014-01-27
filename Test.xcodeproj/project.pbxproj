@@ -21,6 +21,7 @@
 		2413618F189696710021EC2C /* TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2413618E189696710021EC2C /* TestTests.m */; };
 		2413619A189697570021EC2C /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24136199189697570021EC2C /* TestViewController.m */; };
 		2413619C189697800021EC2C /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2413619B189697800021EC2C /* Storyboard.storyboard */; };
+		2413619F18969C730021EC2C /* ExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2413619E18969C730021EC2C /* ExampleTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,9 @@
 		24136198189697570021EC2C /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		24136199189697570021EC2C /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		2413619B189697800021EC2C /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		2413619D18969C730021EC2C /* ExampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleTableViewController.h; sourceTree = "<group>"; };
+		2413619E18969C730021EC2C /* ExampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleTableViewController.m; sourceTree = "<group>"; };
+		241361A018969C920021EC2C /* ColorOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorOptions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,11 +118,14 @@
 			children = (
 				24136198189697570021EC2C /* TestViewController.h */,
 				24136199189697570021EC2C /* TestViewController.m */,
+				2413619D18969C730021EC2C /* ExampleTableViewController.h */,
+				2413619E18969C730021EC2C /* ExampleTableViewController.m */,
 				24136178189696710021EC2C /* AppDelegate.h */,
 				24136179189696710021EC2C /* AppDelegate.m */,
 				2413617B189696710021EC2C /* Images.xcassets */,
 				24136170189696710021EC2C /* Supporting Files */,
 				2413619B189697800021EC2C /* Storyboard.storyboard */,
+				241361A018969C920021EC2C /* ColorOptions.h */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -250,6 +257,7 @@
 			files = (
 				2413619A189697570021EC2C /* TestViewController.m in Sources */,
 				2413617A189696710021EC2C /* AppDelegate.m in Sources */,
+				2413619F18969C730021EC2C /* ExampleTableViewController.m in Sources */,
 				24136176189696710021EC2C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
